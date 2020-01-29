@@ -58,21 +58,16 @@
 
   /* 비쥬얼 부분 */
   .visual{
-      
-  }
-  .visual .visual-img{
+    background:url(../img/petsitting-desktop.jpg)no-repeat 50% 50%;
+    background-size:cover;   
+    width:100%;
     position:relative;
-    height:680px;
-  }
-  .visual .visual-img img{
-      width:100%;
-      display:block;
-      height:100%;
+    padding:340px;
   }
   .visual .visual-text{
       position: absolute;
       top:180px;
-      left:350px;
+      left:27%;
   }
   .visual .visual-text p:nth-child(1){
       margin-bottom:0;
@@ -103,9 +98,9 @@
       font-weight:bold;
       font-size:18px;
   }
+  /* 메인 컨텐츠 시작 */
   main{
       padding-top:50px;
-      max-width:830px;
       width:100%;
       display:block;
       margin:0 auto;
@@ -114,6 +109,7 @@
     font-size:40px;
     padding-bottom:60px;
     margin-bottom:0;
+    margin-top:70px;
   }
   main h3{
     margin-top:0;
@@ -121,6 +117,8 @@
   main .walk_lonely_area{
     padding-bottom:110px;
     border-bottom:1px solid rgb(218, 221, 226);
+    max-width:830px;
+    margin:0 auto;
   }
 
   main .walk_lonely_area article .dog_walk, .cat_lonely{
@@ -145,8 +143,25 @@
       margin-top:0;
   }
 /* 산책 및 서비스 요금 */
-
+.pet_service_area{
+    padding-bottom:110px;
+    border-bottom:1px solid rgb(218, 221, 226);
+    max-width:830px;
+    margin:0 auto;   
+}
+.pet_cost{
+    padding-bottom:110px;
+    border-bottom:1px solid rgb(218, 221, 226);
+    max-width:830px;
+    margin:0 auto;   
+}
 /* 펫시터 방문 */
+main .petsitter_area{
+    padding-bottom:110px;
+    border-bottom:1px solid rgb(218, 221, 226);
+    max-width:830px;
+    margin:0 auto;
+}
 main .petsitter_area .petsitter_flex{
     display:flex;
     justify-content: space-between;
@@ -173,7 +188,73 @@ main .petsitter_area .pet_certification{
   margin-left:39px;
   font-weight:300;
 }
+/* 펫시터 실시간 채팅 */
+.petsitter_chatting{
+  padding-bottom:110px;
+  border-bottom:1px solid rgb(218, 221, 226);
+  max-width:830px;
+  margin:0 auto;
+}
+.petsitter_chatting .chatting_title{
+  display:flex;  
+  justify-content: space-between;
 
+}
+.petsitter_chatting .chatting_title img{
+  width:50%;
+  padding:80px 0 48px 0;
+}
+.petsitter_chatting .chatting_three_content{
+  display:flex;
+}
+.petsitter_chatting .chatting_three_content div{
+  width:28%;
+  margin-right:50px;
+}
+.petsitter_chatting .chatting_three_content div:nth-child(1){
+  width:30%;
+}
+/*  펫시터 후기 */
+.petsitter_trust{
+  padding-bottom:110px;
+  border-bottom:1px solid rgb(218, 221, 226);  
+  width:100%;
+  max-width:100% !important;
+  background:#00395b;
+
+}
+.petsitter_trust h2{
+  max-width:1050px;
+  margin:0 auto;
+  padding:70px 0 60px 0;
+  color:#fff;  
+}
+.petsitter_trust .trust_area h3{
+  margin-bottom:0;
+}  
+.petsitter_trust .trust_area p{
+  margin-top:0;
+  margin-bottom:5px;
+  font-size:15px;
+  line-height:1.5em;
+  font-weight:300;
+}
+.petsitter_trust .trust_area a{
+  color: rgb(5, 92, 245);
+  font-weight:500;
+}
+
+.petsitter_trust .trust_area{
+  display:flex;
+  max-width:1050px;
+  margin:0 auto;
+}
+.petsitter_trust .trust_area div{
+  width:30.5%;
+  background:#fff;
+  padding:25px 25px;
+  margin-right:20px;
+}
   /* 푸터 */
   .footer-area{
     background-color: rgb(38, 39, 40);
