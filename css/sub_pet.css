@@ -142,12 +142,38 @@
       width: 88%;
       margin-top:0;
   }
-/* 산책 및 서비스 요금 */
+/* 서비스 범위 및 서비스 요금 */
 .pet_service_area{
     padding-bottom:110px;
     border-bottom:1px solid rgb(218, 221, 226);
     max-width:830px;
     margin:0 auto;   
+}
+.pet_service_area h4{
+  border-bottom: 0.5px solid rgb(218, 221, 226);
+  padding-bottom:10px;
+}
+.pet_service_area article .dog_service, .cat_service{
+  display:flex;
+}
+.pet_service_area article .dog_service img, .cat_service img{
+  width:50%;
+}
+.pet_service_area article ul{
+  margin:0;
+}
+.pet_service_area article ul li{
+  counter-increment: item;
+  margin-left:50px;
+  font-size:15px;
+  font-weight:400;
+}
+.pet_service_area article ul li::before{
+  content: counter(item, disc) " ";
+  color:rgb(5, 92, 245);
+  font-size:22px;
+  line-height:18px;
+
 }
 .pet_cost{
     padding-bottom:110px;
@@ -221,7 +247,6 @@ main .petsitter_area .pet_certification{
   width:100%;
   max-width:100% !important;
   background:#00395b;
-
 }
 .petsitter_trust h2{
   max-width:1050px;
@@ -243,7 +268,6 @@ main .petsitter_area .pet_certification{
   color: rgb(5, 92, 245);
   font-weight:500;
 }
-
 .petsitter_trust .trust_area{
   display:flex;
   max-width:1050px;
@@ -255,6 +279,77 @@ main .petsitter_area .pet_certification{
   padding:25px 25px;
   margin-right:20px;
 }
+  /*펫 어플  */
+  .pet_app{
+    padding:110px 0 18px 0;
+    max-width:830px;
+    margin:0 auto;    
+    overflow:hidden;
+  }
+  .pet_app_content{
+    float:left;
+    width:50%;
+  }
+  .pet_app_content h2{
+    margin:0;
+    padding:0;
+  }
+  .pet_app_content p{
+    margin:30px 0;
+  }
+  .store_img{
+    display:flex;align-items: center;
+  }
+  .store_img .google_store_img img{
+    width:150px;
+  }
+  .pet_app_custommer{
+    width:50%;
+    float:right;
+  }
+  .app_more a{
+    display:flex;
+  }
+  /* 자주 묻는 질문 */
+  .pet_toggle{
+    padding-bottom:110px;
+    max-width:830px;
+    margin:0 auto;  
+  }
+
+  /* 홈 서비스 */
+  .home_service{
+    max-width:1200px;
+    margin:0 auto;  
+    background:#f3f4f8;
+    padding:64px 84px;
+    margin-bottom:110px;
+  }
+  .home_service h2{
+    padding:0;
+    margin:0;
+  }
+  .home_service p{
+
+  }
+  .home_service ul{
+    display:flex;
+    justify-content: space-between;  
+  }
+  .home_service ul li{
+    position:relative;
+  }
+  .home_service ul li img{
+    width:74%;
+    display:block;
+  }
+  .home_service ul li span{
+    position:absolute;
+    top:10px;
+    left:15px;
+    font-weight:500;
+  } 
+
   /* 푸터 */
   .footer-area{
     background-color: rgb(38, 39, 40);
