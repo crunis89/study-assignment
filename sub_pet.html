@@ -7,6 +7,7 @@
     <title>펫</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="./css/sub_pet.css">
+
 </head>
 <body>
     <div id="wrap">
@@ -99,7 +100,9 @@
                 <h2>산책 돌봄도 간편하고 안전하게</h2>
                 <h3>서비스 범위</h3>
                 <article>
+                    <h4>강아지 산책</h4>
                     <div class="dog_service">
+                        
                         <img src="./img/walk@2x.jpg" alt="강와지가 공물고 있는 이미지">    
                         <ul>
                             <li>집 근처 산책</li>
@@ -108,7 +111,11 @@
                             <li>산책 후 강아지 발 닦아주기</li>
                         </ul>
                     </div>
+                </article>
+                <article>
+                    <h4>고양이 돌봄</h4>
                     <div class="cat_service">
+                        
                         <img src="./img/stay@2x.jpg" alt="고양이 이미지">    
                         <ul>
                             <li>식사 챙겨주기</li>
@@ -206,6 +213,36 @@
                     </div>
                 </div>
             </section>
+            <section class="pet_app">
+                <div class="pet_app_content">
+                    <h2>
+                        어플로 <br>
+                        더욱 간편하게
+                    </h2>  
+                    <p>복잡한 절차 없이 몇 번의 터치로 서비스 예약이 가능합니다.</p>
+                    <ul class="store_img">
+                        <li class="app_store_img"><a href="#"><img src="./img/apple-store-badge.svg" alt=""></a></li>
+                        <li class="google_store_img"><a href="#"><img src="./img/google-play-badge.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <img class="pet_app_custommer" src="./img/main-4-2@2x.png" alt="고객과 대화하는 이미지">
+            </section>
+            <section class="pet_toggle">
+                <h2 class="pet_question">자주 묻는 질문</h2>
+                
+                <div class="app_more"><a href="#">자주 묻는 질문 더보기 <img src="./img/brand.svg" alt=""></a></div>
+            </section>
+            <section class="home_service">
+                <h2 class="service_heading">홈서비스 미소</h2>
+                <p>150만이 검증한 다양한 미소 홈서비스를 이용하세요.</p>
+                <ul class="home_service_list">
+                    <li><a href="#"><span>가사도우미</span><img src="./img/other-1@2x.jpg" alt="정돈된 침실 이미지"></a></li>
+                    <li><a href="#"><span>가사도우미</span><img src="./img/other-2@2x.jpg" alt="이사박스들이 모여있는 이미지"></a></li>
+                    <li><a href="#"><span>가사도우미</span><img src="./img/other-3@2x.jpg" alt="햇빛이 비치는 거실 이미지"></a></li>
+                    <li><a href="#"><span>가사도우미</span><img src="./img/other-4@2x.jpg" alt="세탁기 이미지"></a></li>
+                    <li><a href="#"><span>가사도우미</span><img src="./img/other-6@2x.jpg" alt="페인트 칠하는 이미지"></a></li>
+                </ul>
+            </section>
         </main>
         <!--//main-->
         <div class="footer-area">
@@ -229,5 +266,26 @@
         <!--//footer-area-->
     </div>
     <!--//wrap-->
+    <script>
+        var toggler = document.getElementsByClassName("toggleHeading");
+        var i;
+        
+        for (i = 0; i < toggler.length; i++) {
+          toggler[i].addEventListener("click", function() {
+            this.parentElement.querySelector(".toggleText").classList.toggle("active");
+          });
+        }
+    </script> 
+    <script>
+        var panels = $('.board section')
+        var tabs = $('.tab a')
+
+        tabs.click(function(e){
+            e.preventDefault();
+            panels.removeClass('board-act');
+            $(this).parent().parent().addClass('board-act');
+        });
+    </script>
 </body>
+
 </html>
