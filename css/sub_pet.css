@@ -175,11 +175,50 @@
   line-height:18px;
 
 }
-.pet_cost{
-    padding-bottom:110px;
-    border-bottom:1px solid rgb(218, 221, 226);
-    max-width:830px;
-    margin:0 auto;   
+.pet_service_area .service_cost{
+  margin:0 auto; 
+  padding-top:64px;  
+}
+.pet_service_area .service_cost ul{
+  text-align:center;
+  margin:0;
+}
+.pet_service_area .service_cost .cost_title{
+  display: flex;
+  border: solid #eee;
+  border-width: 1px 1px 0 1px;
+  padding: 10px;
+}
+.pet_service_area .service_cost .cost_title:nth-child(1){
+  padding: 10px 5px;
+}
+.pet_service_area .service_cost .cost_title:nth-child(2) li, .cost_title:nth-child(3) li{
+  display: flex;
+  margin: 0;
+  width: 100%;
+  JUSTIFY-CONTENT: space-around;
+}
+
+.pet_service_area .service_cost .cost_title:nth-child(3){
+  display: flex;
+  border: solid #eee;
+  border-width: 1px;
+  padding: 10px;
+}
+.pet_service_area .service_cost ul li{
+  margin:0 auto;
+  width:100%;
+}
+.pet_service_area .service_cost ul li::before{
+    content:'';
+    display:none;
+}
+.pet_service_area .service_cost p{
+   color: rgb(163, 167, 174);
+   margin-right: 8px;
+   margin-bottom: 0px;
+   line-height: 1.5;
+   padding-bottom:64px;
 }
 /* 펫시터 방문 */
 main .petsitter_area{
