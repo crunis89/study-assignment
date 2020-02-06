@@ -180,35 +180,36 @@
   margin:0 auto; 
   padding-top:64px;  
 }
+.pet_service_area .service_cost .cost_area{
+  border:1px solid rgb(227, 229, 234);  
+}
 .pet_service_area .service_cost ul{
   text-align:center;
-  margin:0;
-}
-.pet_service_area .service_cost .cost_title{
-  display: flex;
-  border: solid #eee;
-  border-width: 1px 1px 0 1px;
-  padding: 10px;
 }
 .pet_service_area .service_cost .cost_title:nth-child(1){
-  padding: 10px 5px;
+  border-bottom:1px solid rgb(227, 229, 234);  
 }
-.pet_service_area .service_cost .cost_title:nth-child(2) li, .cost_title:nth-child(3) li{
-  display: flex;
-  margin: 0;
-  width: 100%;
-  JUSTIFY-CONTENT: space-around;
+.pet_service_area .service_cost .cost_title:nth-child(1) li{
+  font-weight:bold;  
 }
-
-.pet_service_area .service_cost .cost_title:nth-child(3){
-  display: flex;
-  border: solid #eee;
-  border-width: 1px;
-  padding: 10px;
+.pet_service_area .service_cost .cost_title:nth-child(2){
+  border-bottom:1px solid rgb(227, 229, 234);  
 }
 .pet_service_area .service_cost ul li{
   margin:0 auto;
-  width:100%;
+}
+.pet_service_area .service_cost .cost_title{
+  display:flex;
+}
+.pet_service_area .service_cost .cost_title li{
+  padding: 10px;
+  width:33.333%
+}
+.pet_service_area .service_cost .cost_title li:nth-child(3){
+  background-color: rgb(243, 244, 248);
+}
+.pet_service_area .service_cost .cost_title li span{
+  display:block;
 }
 .pet_service_area .service_cost ul li::before{
     content:'';
