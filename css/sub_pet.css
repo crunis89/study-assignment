@@ -149,9 +149,7 @@
     border-bottom:1px solid rgb(218, 221, 226);
     max-width:830px;
     margin:0 auto;   
-}
-.pet_service_area article{
-  
+    position:relative;
 }
 .pet_service_area h4{
   border-bottom: 0.5px solid rgb(218, 221, 226);
@@ -159,6 +157,12 @@
 }
 .pet_service_area article .dog_service, .cat_service{
   display:flex;
+}
+.dog_position_area{
+  padding-top:35px;
+}
+.pet_service_area .cat_position_area .service_tab button{
+  margin-left:91px;
 }
 .pet_service_area article .dog_service img, .cat_service img{
   width:50%;
@@ -177,11 +181,42 @@
   color:rgb(5, 92, 245);
   font-size:22px;
   line-height:18px;
+}
+.dog_service, .cat_service{
+  display:none;
+}
+.board .board-act{
+  display:flex;
 
+}
+.dog_position_area .service_tab{
+  padding-top:30px;
+  border-top:1px solid #ccc;
+}
+.tab{
+  font-weight:400;
+  margin:0;
+  font-size:1.4rem;
+}
+.tab button{
+  display:block;
+  padding:10px 10px;
+  border:#fff;
+  background:0;
+  color:#888;
+  cursor: pointer;
+  /* background:#ccc linear-gradient(180deg, #bbb, #eee); */
+  /* 그라디언트속성을 지원안할경우 대비해 앞에 #ccc 처럼 배경을 넣어논다 */
+  position:absolute;
+  top:160px;
+}
+.pet_service_area .tab button:hover{
+  transition:0.3s;
+  border-bottom:3px rgb(5, 92, 245);  
 }
 .pet_service_area .service_cost{
   margin:0 auto; 
-  padding-top:64px;  
+  margin-top:80px;
 }
 .pet_service_area .service_cost .cost_area{
   border:1px solid rgb(227, 229, 234);  
@@ -224,6 +259,9 @@
    margin-bottom: 0px;
    line-height: 1.5;
    padding-bottom:64px;
+}
+.possibility_area p{
+  margin:0;
 }
 /* 펫시터 방문 */
 main .petsitter_area{
@@ -355,17 +393,47 @@ main .petsitter_area .pet_certification{
     display:flex;
   }
   /* 자주 묻는 질문 */
-  .pet_toggle{
+  .service_toggle{
     padding-bottom:110px;
     max-width:830px;
     margin:0 auto;  
   }
-.toggle_show{
+  .service_toggle article{
+    border-top:1px solid #eee;
+  }
+  .service_toggle article:nth-child(4){
+    border-bottom:1px solid #eee;
+  }  
+  .service_toggle article button{
+    border:0;
+    background:0;
+    padding:16px;    
+    cursor: pointer;
+    text-align:left;
+    width:100%;
+    font-weight:700;
+    font-size:1rem;
+  }  
+  .toggle_show{
   display:none;
+  background:#f3f4f8;
+  padding:24px;
+  font-weight:300;
+  line-height:1.7em;  
 }
-/* .toggle_on{
-  display:block;
-} */
+.toggle_show p{
+  margin:0;
+}
+.toggle_question_button{
+  text-align:right;
+}
+.toggle_question_button a{
+  color: rgb(5, 92, 245);
+  font-weight:700;  
+}
+.toggle_question_button span img{
+  vertical-align:middle;
+}
   /* 홈 서비스 */
   .home_service{
     max-width:1200px;
