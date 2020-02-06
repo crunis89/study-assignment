@@ -342,7 +342,7 @@
     <script>
         $(document).ready( function() {
           $( '.toggle_btn' ).click( function() {
-            $( '.toggle_show' ).toggle( 'slow' );
+              $(this).next('.toggle_show').toggle('slow');
           });
         });
       </script>

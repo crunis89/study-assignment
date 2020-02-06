@@ -150,6 +150,9 @@
     max-width:830px;
     margin:0 auto;   
 }
+.pet_service_area article{
+  
+}
 .pet_service_area h4{
   border-bottom: 0.5px solid rgb(218, 221, 226);
   padding-bottom:10px;
@@ -357,7 +360,12 @@ main .petsitter_area .pet_certification{
     max-width:830px;
     margin:0 auto;  
   }
-
+.toggle_show{
+  display:none;
+}
+/* .toggle_on{
+  display:block;
+} */
   /* 홈 서비스 */
   .home_service{
     max-width:1200px;
