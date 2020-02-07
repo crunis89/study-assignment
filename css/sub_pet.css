@@ -14,8 +14,14 @@
     clip-path: polygon(0 0, 0 0, 0 0);
   }
   /* 스킵네비게이션 */
+  #skipnavigation {
+    
+  }
+  #skipnavigation ul{
+    margin:0;
+  }  
   #skipnavigation a {
-    left: -100%;
+    left: -1000%;
     position: absolute;
 	text-decoration:none;
 }
@@ -49,6 +55,7 @@
     width:100%;
     background:rgba(255, 255, 255, .5);
     z-index:100;
+    top:0;
   }
   .header-area header{
     display:flex;
