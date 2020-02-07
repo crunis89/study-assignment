@@ -467,7 +467,7 @@ main .petsitter_area .pet_certification{
   font-weight:700;  
 }
 .toggle_question_button span img{
-  vertical-align:middle;
+  vertical-align:top;
 }
   /* 홈 서비스 */
   .home_service{
