@@ -13,6 +13,25 @@
     clip: rect(0,0,0,0);
     clip-path: polygon(0 0, 0 0, 0 0);
   }
+  /* 스킵네비게이션 */
+  #skipnavigation a {
+    left: -100%;
+    position: absolute;
+	text-decoration:none;
+}
+#skipnavigation a:active,#skipnavigation a:focus,#skipnavigation a.focus {
+    background: rgb(5, 92, 245);
+	  position:absolute;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    color: #fff;    
+}
   /* float를 해제하기 위한 clear 선언 */
   .clearfix::after {
     content: "";
